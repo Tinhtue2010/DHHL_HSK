@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kênh Người Bán - Nhập Thông Tin Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>KÊNH NGƯỜI BÁN</h1>
+            </div>
+            <div class="user-info">
+                <img src="user-icon.png" alt="User Icon">
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="menu">
+                <ul>
+                    <li><input type="radio" name="menu" id="info" checked><label for="info">Nhập thông tin sản phẩm</label></li>
+                    <li><input type="radio" name="menu" id="sale-info"><label for="sale-info">Thông tin bán hàng</label></li>
+                    <li><input type="radio" name="menu" id="shipping-info"><label for="shipping-info">Vận chuyển</label></li>
+                    <li><input type="radio" name="menu" id="other-info"><label for="other-info">Thông tin khác</label></li>
+                </ul>
+            </div>
+
+            <div class="form-section">
+                <h2>Nhập thông tin sản phẩm</h2>
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="image">Hình ảnh sản phẩm:</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+                    <div class="input-group">
+                        <label for="video">Video sản phẩm:</label>
+                        <input type="file" id="video" name="video" accept="video/*">
+                    </div>
+                    <div class="input-group">
+                        <label for="product-name">Tên sản phẩm:</label>
+                        <input type="text" id="product-name" name="product-name" placeholder="Thêm tên sản phẩm" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="category">Loại hàng:</label>
+                        <select id="category" name="category">
+                            <option value="rau-cau">Rau củ</option>
+                            <option value="trai-cay">Trái cây</option>
+                            <option value="gao">Gạo</option>
+                            <option value="thuc-pham-chay">Thực phẩm chế biến sẵn</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="description">Mô tả sản phẩm:</label>
+                        <textarea id="description" name="description" placeholder="Thêm mô tả" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="cancel-btn">Hủy</button>
+                        <button type="submit" class="save-btn">Lưu</button>
+                        <button type="submit" class="save-display-btn">Lưu & Hiển thị</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
